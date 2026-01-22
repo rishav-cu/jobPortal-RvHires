@@ -1,0 +1,90 @@
+/* GLOBAL SETTINGS */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.colour1, footer {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover, .active-link {
+    color: white;
+}
+
+.container {
+    max-width: 800px; /* Narrower for reading focus */
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* SEARCH */
+.simple-search {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.simple-search input {
+    padding: 12px;
+    width: 60%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.simple-search button {
+    padding: 12px 25px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* JOB ITEMS (Clean Stripes) */
+.job-item {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-item h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.job-item p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.apply-btn {
+    padding: 8px 20px;
+    background: transparent;
+    border: 1px solid #2c3e50;
+    color: #2c3e50;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.apply-btn:hover {
+    background: #2c3e50;
+    color: white;
+}
