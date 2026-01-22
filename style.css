@@ -91,3 +91,274 @@ input[type="submit"]:hover {
     color: #000;
     text-decoration: none;
 }
+
+
+
+
+/* HERO SECTION (Split Layout) */
+.hero-split {
+    display: flex;       
+    align-items: center; 
+    justify-content: space-between;
+    text-align: left;    
+    gap: 40px;           
+    margin-bottom: 50px;
+}
+
+/* LEFT SIDE (Image) */
+.hero-image {
+    flex: 1; 
+}
+
+.hero-image img {
+    width: 100%;
+    /* Rounded corners: Top-Left and Bottom-Right */
+    border-radius: 30px 0 30px 0; 
+    box-shadow: 10px 10px 0px #2c3e50; /* Solid shadow */
+}
+
+/* RIGHT SIDE (Text) */
+.hero-text {
+    flex: 1; 
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: #333;
+}
+
+/* SEARCH INPUTS */
+.hero-search input[type="text"] {
+    padding: 12px;
+    width: 60%;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.hero-search input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.categories {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category {
+    background: white;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+/* ================= POPULAR CATEGORIES ================= */
+.categories-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.categories-section h2 {
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.category-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    gap: 15px;
+}
+
+.cat-tag {
+    background-color: white;
+    padding: 10px 25px;
+    border-radius: 5px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.cat-tag:hover {
+    transform: translateY(-3px); /* Lifts up on hover */
+    color: #2c3e50;
+}
+
+/* ================= LATEST JOB OPENINGS (TABLE) ================= */
+.latest-jobs {
+    margin-bottom: 50px;
+    text-align: center; /* Centers the Heading */
+}
+
+.latest-jobs h2 {
+    text-align: left; /* Aligns "Latest Job Openings" to left like image */
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.jobs-table {
+    width: 100%;
+    border-collapse: collapse; /* Removes space between borders */
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.jobs-table th {
+    background-color: #1a252f; /* Dark Blue Header */
+    color: white;
+    padding: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.jobs-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #eee; /* Light grey line between rows */
+    color: #333;
+    font-size: 15px;
+}
+
+.jobs-table tr:last-child td {
+    border-bottom: none; /* Removes border from last row */
+}
+
+.table-apply {
+    color: #2c3e50;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.table-apply:hover {
+    text-decoration: underline;
+}
+
+/* Make table scrollable on mobile */
+.table-responsive {
+    overflow-x: auto;
+}
+/* ================= MAIN CONTENT SPLIT ================= */
+.main-content-split {
+    display: flex;
+    gap: 30px; /* Space between the table and categories */
+    align-items: flex-start; /* Aligns them to the top */
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+/* LEFT SIDE (Table Area) */
+.jobs-left {
+    flex: 2; /* Takes up 66% of the space */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.jobs-left h2 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* RIGHT SIDE (Categories Area) */
+.categories-right {
+    flex: 1; /* Takes up 33% of the space */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.categories-right h2 {
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Vertical List of Tags for the Sidebar */
+.category-tags-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cat-tag {
+    background-color: #f0f4f8; /* Light blue-grey background */
+    padding: 8px 15px;
+    border-radius: 20px; /* Fully rounded pill shape */
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+    border: 1px solid transparent;
+}
+
+.cat-tag:hover {
+    background-color: #2c3e50;
+    color: white;
+    border-color: #2c3e50;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .main-content-split {
+        flex-direction: column; /* Stack them on phones */
+    }
+}
+/* 1. Find this block and UPDATE the max-width */
+.container {
+    max-width: 1200px; /* Increased from 800px to 1200px */
+    width: 90%;        /* Ensures it looks good on smaller screens too */
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* 2. Update this block to ensure full width */
+.main-content-split {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 50px;
+    text-align: left;
+    width: 100%; /* Forces the split section to use all available space */
+}
+
+/* Optional: Adjust the ratio if you want the table significantly wider */
+.jobs-left {
+    flex: 3; /* Increased from 2 to 3 (Makes table wider) */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.categories-right {
+    flex: 1; /* Remains 1 (Sidebar stays compact) */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
